@@ -314,7 +314,7 @@ a:focus {
 
 .header .content-inner {
     padding: 100px 30px;
-    background: url(../img/me.png) right bottom no-repeat;
+    background: url(../img/developer.png) right bottom no-repeat;
     background-size: contain;
 }
 
@@ -1102,3 +1102,57 @@ a:focus {
     color: #222222;
 }
 
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ddd;
+    left: 30px;
+    margin-left: -1.5px;
+}
+.timeline > li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 60px;
+}
+.timeline > li::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FF6F61;
+    left: 25px;
+    top: 5px;
+}
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+.details {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.details h5 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.details small {
+    display: block;
+    margin-bottom: 10px;
+    color: #FF6F61;
+}
+.details p {
+    margin: 0;
+}
